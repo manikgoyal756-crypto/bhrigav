@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8”>
+    <title>IWT Practical — CSS Animation</title>
+    <style>
+        Body {
+            Font-family: Arial, sans-serif;
+            Text-align: center;
+            Margin: 40px;
+            Background: #f5f7fa;
+        }
+        H1 {
+            Color: #333;
+        }
+        /* --- Image Fade Animation --- */
+        .fade-image {
+            Width: 250px;
+            Border-radius: 12px;
+            Margin: 20px 0;
+            Animation: fadeInOut 5s infinite;
+        }
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        /* --- Button Hover Transform --- */
+        .btn {
+            Display: inline-block;
+            Padding: 12px 22px;
+            Margin-top: 20px;
+            Font-size: 16px;
+            Border: none;
+            Border-radius: 8px;
+            Background-color: #0077ff;
+            Color: white;
+            Cursor: pointer;
+            Transition: all 0.3s ease;
+        }
+        .btn:hover {
+            Background-color: #0056b3;
+            Transform: scale(1.1) rotate(-2deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation Example</h1>
+    <h2>Fading Image</h2>
+    <img src="https://wallpapercave.com/wp/wp2704837.jpg" Alt="Demo Image" class="fade-image">
+    <h2>Transforming Button</h2>
+    <button class="btn">Hover Me!</button>
+</body>
+</html>
